@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Projeto Injustice  - dev em dobro</title>
+</head>
+<body>
+    <header>
+        <img src="./src/imagens/logo.png" alt="Logo" class="logo">
+    </header>
+    <main class="characters-selection">
+        <section class="characters">
+            <h1 class="title">Selecione um personagem</h1>
+            <ul class="characters-list">
+                <li class="character selected" id="batman" data-name="BATMAN" data-description="Mesmo depois de ter sido exposto ao mundo como o Batman, Bruce Wayne mantém seu juramento de vingar a morte dos pais e lutar pela justiça. Ele se recusa a executar seus inimigos, acreditando que, se passar desse limite, não será melhor que os covardes contra os quais luta.">
+                    <img src="./src/imagens/card-Batman.png" alt="Batman">
+                </li>
+
+                <li class="character selected" id="superman" data-name="SUPERMAN" data-description="Após a queda do regime, Superman agora permanece residente permanente de uma prisão construída para conter e reprimir o Homem de Aço. Ainda lamentando a perda de Lois e seu filho ainda não nascido, Superman sustenta que a paz só pode ser alcançada através da subjugação - Mas, à medida que uma nova ameaça se aproxima, podem inimigos antigos forjar novas alianças?">
+                    <img src="./src/imagens/card-Superman.png" alt="Superman">
+                </li>
+
+                <li class="character selected" id="wonder-woman" data-name="MULHER-MARAVILHA" data-description="Irmã exilada de Temiscira, a Mulher-Maravilha permanece escondida depois da queda do Regime. Ainda uma fiel crente do Superman e do Regime, a Mulher-Maravilha espera a oportunidade de contra-atacar o Batman e libertar o Superman de sua prisão.">
+                    <img src="./src/imagens/card-Wonder-Woman.png" alt="Wonder-Woman">
+                </li>
+
+                <li class="character" id="flash" data-name="FLASH" data-description="Outrora conhecido como O Homem Mais Rápido do Mundo, Barry Allen se aposentou como herói, humilhado publicamente depois de desertar do Regime. No entanto, com um novo inimigo ameaçando inocentes, o Flash volta à ativa, determinado a se redimir.">
+                    <img src="./src/imagens/card-Flash.png" alt="Flash">
+                </li>
+
+                <li class="character" id="cat-woman" data-name="MULHER-GATO" data-description="Com sete vidas, isto tinha de acontecer cedo ou tarde... Eu consegui tudo o que queria, inclusive um lindo príncipe e uma reputação incrível como a mulher que venceu Brainiac. E eu devo dizer... Que tédio infernal. Bruce e eu nos dávamos melhor quando éramos um segredo, atrás das máscaras e de garras afiadas. A lua-de-mel acabou, então eu fiz o que era melhor para nós dois. Não estou triste. Não me tornei Mulher-Gato para conquistar Bruce Wayne. Não quero nunca depender de alguém exceto eu mesma. Irei onde eu quiser, e tomarei o que eu quiser. E nunca, jamais olharei para trás.">
+                    <img src="./src/imagens/card-Cat-Woman.png" alt="Cat-Woman">
+                </li>
+
+                <li class="character" id="aquaman" data-name="AQUAMAN" data-description="O monarca atlante isolou seu reino dos assuntos do mundo da superfície, depois de uma derrota terrível durante a queda do Regime do Superman. Mas sua determinação em manter a independência da Atlântida pode custar caro. Enquanto novas ameaças surgem, o Aquaman é capaz de engolir o orgulho para proteger seu povo?">
+                    <img src="./src/imagens/card-Aquaman.png" alt="Aquaman">
+                </li>
+
+                <li class="character" id="green-lantern" data-name="LANTERNA VERDE" data-description="Reabilitado pelos Guardiões de Oa, Hal Jordan foi capaz de superar seus medos da época em que fez parte da Tropa Sinestro. Recuperando seu posto de Lanterna Verde, Hal volta ao Setor 2814 em uma missão para impedir a invasão de Brainiac e provar, até para si mesmo, que merece uma segunda chance de proferir o juramento dos Lanternas Verdes.">
+                    <img src="./src/imagens/card-Green-Lantern.png" alt="Green Lantern">
+                </li>
+
+                <li class="character" id="cyborg" data-name="CIBORGUE" data-description="Victor Stone perdeu mais do que seus amigos na tragédia de Metrópolis, ele perdeu a esperança. A raiva direcionou sua lealdade ao Superman e firmou sua vontade de servir ao Regime. O mundo está despreparado enquanto uma ameaça se aproxima e o Ciborgue pode ser o único capaz de combater a força tecnológica de Brainiac.">
+                    <img src="./src/imagens/card-Cyborg.png" alt="Cyborg">
+                </li>
+
+            </ul>
+        </section>
+        <section class="selected-character">
+            <img class="big-character" src="./src/imagens/batman.png" alt="Batman">
+            <div class="info-character">
+                <h2 class="character-name" id="character-name">BATMAN</h2>
+                <p class="description-character" id="description-character">Mesmo depois de ter sido exposto ao mundo como o Batman, Bruce Wayne mantém seu juramento de vingar a morte dos pais e lutar pela justiça. Ele se recusa a executar seus inimigos, acreditando que, se passar desse limite, não será melhor que os covardes contra os quais luta.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

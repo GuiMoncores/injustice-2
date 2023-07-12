@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: lato;
+    background-color: black;
+    color:aliceblue;
+}
+
+body::before{
+    content: "";
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.logo {
+    max-width: 600px;
+    max-height: 86px;
+}
+
+.character {
+    max-width: 140px;
+    max-height: 117px;
+}
+
+.characters-selection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 146px); /*altura do header */
+    justify-content: center;
+}
+
+.characters-selection .characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-selection .characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 670px; /* pra ficarem 4 por linha*/
+    gap: 25px;
+}
+
+.characters-selection .characters .title {
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid aqua;
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+    padding: 5px;
+    text-shadow: 1px 1px 20px aqua;
+}
+
+.characters-list .character img {
+    width: 100%;
+    height: 100%;
+}
+
+.characters-list .character.selected {
+    box-shadow: 0px 0px 20px 5px darkblue;
+}
+
+.selected-character {
+    text-align: center;
+    max-height: 500px; /* MUTÁVEL PELO FIGMA*/   
+}
+
+.selected-character .big-character { /* MUTÁVEL PELO FIGMA*/
+    width: 400px;
+    height: 400px;
+}
+
+.selected-character .character-name {
+    border-bottom: 2px solid #aa9417;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.selected-character .description-character {
+    font-size: 12px;
+    padding: 3px 5px 10px 5px;
+    text-align: justify;
+    font-weight: 500;
+    text-shadow: 1px 2px 3px #aa9417;
+    color: white;
+}
+
+.selected-character .info-character {
+    font-size: 18px;
+    line-height: 15px;
+    align-items: center;
+    width: 420px;
+    color: #e1cd55
+    ;
+}
