@@ -22,41 +22,13 @@ body::before{
 header {
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 30px 0 15px;
 }
 
 .logo {
-    max-width: 600px;
+    align-items: center;
+    max-width: 430px;
     max-height: 86px;
-}
-
-.character {
-    max-width: 140px;
-    max-height: 117px;
-}
-
-.characters-selection {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    min-height: calc(100vh - 146px); /*altura do header */
-    justify-content: center;
-}
-
-.characters-selection .characters-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-.characters-selection .characters {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 670px; /* pra ficarem 4 por linha*/
-    gap: 25px;
 }
 
 .characters-selection .characters .title {
@@ -64,6 +36,7 @@ header {
     letter-spacing: 0.3px;
     text-transform: uppercase;
     border-bottom: 2px solid aqua;
+    border-top: 2px solid aqua;
     width: 100%;
     text-align: center;
     color: antiquewhite;
@@ -71,13 +44,45 @@ header {
     text-shadow: 1px 1px 20px aqua;
 }
 
+.character {
+    max-width: 105px;
+    background-color: #e1cd55;
+}
+
 .characters-list .character img {
     width: 100%;
     height: 100%;
 }
 
+.characters-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: calc(100vh - 107px); /*altura do header */
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-selection .characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-selection .characters {
+    display: flex;
+    gap: 15px;
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .characters-list .character.selected {
-    box-shadow: 0px 0px 20px 5px darkblue;
+    box-shadow: 0px 0px 30px 4px aqua;
 }
 
 .selected-character {
@@ -86,12 +91,13 @@ header {
 }
 
 .selected-character .big-character { /* MUTÁVEL PELO FIGMA*/
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .selected-character .character-name {
     border-bottom: 2px solid #aa9417;
+    color: #e1cd55;
     letter-spacing: 4px;
     text-transform: uppercase;
     padding: 10px;
@@ -111,7 +117,5 @@ header {
     font-size: 18px;
     line-height: 15px;
     align-items: center;
-    width: 420px;
-    color: #e1cd55
-    ;
+    width: 400px;
 }
